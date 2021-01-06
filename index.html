@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="container">
+    <img id="bgTop" src="images/bg-bottom.svg" alt="bg-top">
+
+    <div class="title">
+      <h2>Our Pricing</h2>
+
+      <div class="price">
+        <p>Annually</p>
+
+        <div id="troca" onclick="troca()" class="troca">
+          <div id="ball" class="ball"></div>
+        </div>
+
+        <p>Monthly</p>
+      </div>
+      
+    </div>
+
+    <div class="planos">
+
+      <ul id="ul">
+
+        <li class="li-1">
+          <h3>Basic</h3>
+          <h1>&dollar;1<strong id="strong">9</strong>9.99</h1>
+          <ul class="ul-2">
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+
+          <button>LEARN MORE</button>
+        </li>
+        
+        <li class="li-1" id="li-2">
+          <h3>Professional</h3>
+          <h1>&dollar;24<strong id="strong2">9</strong>.99</h1>
+          <ul class="ul-2">
+            <li>1 TB Storage</li>
+            <li>5 Users Allowed</li>
+            <li>Send up to 10 GB</li>
+          </ul>
+
+          <button>LEARN MORE</button>
+        </li>
+
+        <li class="li-1">
+          <h3>Master</h3>
+          <h1>&dollar;39<strong id="strong3">9</strong>.99</h1>
+          <ul class="ul-2">
+            <li>2 TB Storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20 GB</li>
+          </ul>
+
+          <button>LEARN MORE</button>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

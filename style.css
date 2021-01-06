@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,input,select,button,textarea
+{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+html,body
+{
+    width: 100vw;
+    height: 100vh;
+
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul,li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.container
+{
+    width: 1440px;
+    height: 800px;
+
+    background-image: url(images/bg-top.svg);
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    background-color: hsl(240, 78%, 98%);
+}
+
+.container #bgTop
+{
+    position: absolute;
+
+    bottom: 90px;
+    left: 240px;
+}
+
+.container .title
+{
+    margin-top: 70px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: hsl(233, 13%, 49%);
+
+    text-align: center;
+}
+
+.container .title .price
+{
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .title .price p
+{
+    margin-right: 30px;
+    margin-left: 30px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: hsl(234, 14%, 74%);
+}
+
+.container .title .price .troca
+{
+    width: 55px;
+    height: 30px;
+
+    background: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .title .price .troca .ball
+{
+    width: 22px;
+    height: 22px;
+
+    background: white;
+
+    border: none;
+    border-radius: 50%;
+}
+
+.container .title .price .troca.active
+{
+    justify-content: flex-start;
+}
+
+.planos ul li #strong
+{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.planos ul li #strong.mostrar
+{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+}
+
+.planos ul li #strong2
+{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.planos ul li #strong2.mostrar2
+{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+}
+
+.planos ul li #strong3
+{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.planos ul li #strong3.mostrar3
+{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+}
+
+.planos
+{
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planos #ul
+{
+    display: flex;
+    align-items: center;
+}
+
+.planos #ul .li-1
+{
+    width: 350px;
+    height: 450px;
+    
+    background: white;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    position: relative;
+
+    text-align: center;
+}
+
+.planos #ul #li-2
+{
+    height: 500px;
+
+    background: linear-gradient(to bottom, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+
+    padding-top: 20px;
+
+}
+
+.planos #ul #li-2 h3
+{
+    color: white;
+}
+
+.planos #ul #li-2 h1
+{
+    color: white;
+}
+
+.planos #ul #li-2 .ul-2 li
+{
+    color: white;
+}
+
+.planos #ul #li-2 button
+{
+    background: white;
+
+    color: hsl(237, 63%, 64%);
+    
+    transition: 0.3s;
+}
+
+.planos #ul #li-2 button:hover
+{
+    background: transparent;
+    
+    color: white;
+
+    border: 1px solid hsl(234, 14%, 74%);
+}
+
+.planos #ul .li-1 h3
+{
+    margin-top: 25px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: hsl(233, 13%, 49%);
+}
+
+.planos #ul .li-1 h1
+{
+    margin-top: 20px;
+
+    font-size: 60px;
+    font-weight: 700;
+
+    color: hsl(232, 13%, 33%);
+}
+
+.planos #ul .li-1 .ul-2
+{
+    margin-top: 20px;
+
+    display: block;
+}
+
+.planos #ul .li-1 .ul-2 li
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-size: 15px;
+
+    color: hsl(233, 13%, 49%);
+
+    border-top: 1px solid hsl(234, 14%, 74%);
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+
+.planos #ul .li-1 button
+{
+    width: 100%;
+    height: 45px;
+
+    background: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+
+    margin-top: 35px;
+
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.planos #ul .li-1 button:hover
+{
+    background: transparent;
+
+    color: hsl(237, 63%, 64%);
+
+    border: 1px solid hsl(237, 63%, 64%);
+}
+
+@media(max-width:1061px)
+{
+    html,body
+    {
+        background-color: hsl(240, 78%, 98%);
+    }
+
+    .container
+    {
+        background-position: 200% 0%;
+
+        padding-bottom: 30px;
+    }
+
+    .container #bgTop
+    {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .container .title
+    {
+        margin-top: 10px
+    }
+
+    .container .planos #ul
+    {
+        display: block;
+    }
+
+    .container .planos #ul .li-1
+    {
+        height: 500px;
+
+        margin-top: 30px;
+
+        padding-top: 10px;
+    }
+} 
